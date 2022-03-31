@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/amaticsc/v23/TUZyzwprpvBS1izr_vOECuSf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/fredokaone/v12/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', Courier, monospace;
+    color: aliceblue;
+}
+
+body {
+    background-image: url("JokeBg.png");
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 550px;
+    padding: 40px 50px;
+    background-color: rgb(42, 42, 42);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgba(0,0,0, 0.5);
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 35px;
+    margin: 30px 0;
+    opacity: 0;
+    color: aliceblue;
+    font-family: 'Amatic SC';
+}        
+.joke-fade {
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+button {
+    display: block;
+    background-color: #2B5D64;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #DFD0BB;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
